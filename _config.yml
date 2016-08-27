@@ -2,8 +2,8 @@
 title: PHOTORAMA
 email: ""
 description: "Photo Journal"
-url: "http://sunbliss.github.io"
-baseurl: "/photorama"
+url: "http://annabodyart.github.io"
+baseurl: "/annabodyart.com"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "http://sunbliss.github.io/photorama/gallery/"  
-  - JOURNAL: "http://sunbliss.github.io/photorama/journal/"
-  - ABOUT: "http://sunbliss.github.io/photorama/about/"
+  - GALLERY: "http://annabodyart.github.io/annabodyart.com/gallery/"  
+  - JOURNAL: "http://annabodyart.github.io/annabodyart.com/journal/"
+  - ABOUT: "http://annabodyart.github.io/annabodyart.com/about/"
 
 # All translation keys
 translations:
