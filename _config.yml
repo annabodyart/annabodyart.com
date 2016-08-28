@@ -33,9 +33,11 @@ comments :
 
 # Internal nav
 nav:
+  - ABOUT: "http://annabodyart.github.io/annabodyart.com/about/"
   - PORTFOLIO: "http://annabodyart.github.io/annabodyart.com/gallery/"  
   - NEWS: "http://annabodyart.github.io/annabodyart.com/journal/"
-  - ABOUT: "http://annabodyart.github.io/annabodyart.com/about/"
+  - FAQ: "http://annabodyart.github.io/annabodyart.com/faq/"  
+  - CONTACT: "http://annabodyart.github.io/annabodyart.com/about/"  
 
 # All translation keys
 translations:
