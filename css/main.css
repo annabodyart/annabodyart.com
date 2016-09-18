@@ -71,6 +71,9 @@ hr.small {
 }
 
 @media only screen and (min-width: 768px) {
+  .main-page-title{
+      font-size: 160%; 
+  }
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
