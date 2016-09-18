@@ -71,7 +71,7 @@ hr.small {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-page-title{
+  h2.main-page-title{
       font-size: 160%; 
   }
   .navbar-custom {
@@ -95,6 +95,9 @@ hr.small {
   }
 }
 @media only screen and (min-width: 1170px) {
+  h2.main-page-title{
+      font-size: 220%; 
+  }
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
