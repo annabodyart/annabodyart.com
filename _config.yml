@@ -2,8 +2,8 @@
 title: Anna chapovalov
 email: "annabodyart@gmail.com"
 description: "Professional Painter"
-url: "http://annabodyart.github.io"
-baseurl: "/annabodyart.com"
+url: "http://http://www.annabodyart.com"
+baseurl: "/"
 facebook_username: "annabodyarts"
 twitter_username: "anna_chapovalov"
 instagram_username: "anna.chapovalov"
@@ -30,11 +30,11 @@ comments :
 
 # Internal nav
 nav:
-  - ABOUT: "http://annabodyart.github.io/annabodyart.com/about/"
-  - PORTFOLIO: "http://annabodyart.github.io/annabodyart.com/gallery/"  
-  - NEWS: "http://annabodyart.github.io/annabodyart.com/journal/"
-  - FAQ: "http://annabodyart.github.io/annabodyart.com/faq/"  
-  - CONTACT: "http://annabodyart.github.io/annabodyart.com/contact/"  
+  - ABOUT: "http://http://www.annabodyart.com/about/"
+  - PORTFOLIO: "http://http://www.annabodyart.com/gallery/"  
+  - NEWS: "http://http://www.annabodyart.com/journal/"
+  - FAQ: "http://http://www.annabodyart.com/faq/"  
+  - CONTACT: "http://http://www.annabodyart.com/contact/"  
 
 # All translation keys
 translations:
