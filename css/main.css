@@ -70,6 +70,10 @@ hr.small {
   color: #eee;
 }
 
+  h2.main-page-title{
+      font-size: 160%; 
+  }
+
 @media only screen and (min-width: 768px) {
   h2.main-page-title{
       font-size: 160%; 
