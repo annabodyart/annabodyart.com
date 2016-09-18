@@ -70,12 +70,12 @@ hr.small {
   color: #eee;
 }
 
-  h2.main-page-title{
+  h2.big.main-page-title{
       font-size: 160%; 
   }
 
 @media only screen and (min-width: 768px) {
-  h2.main-page-title{
+  h2.big.main-page-title{
       font-size: 160%; 
   }
   .navbar-custom {
@@ -99,7 +99,7 @@ hr.small {
   }
 }
 @media only screen and (min-width: 1170px) {
-  h2.main-page-title{
+  h2.big.main-page-title{
       font-size: 220%; 
   }
   .navbar-custom {
