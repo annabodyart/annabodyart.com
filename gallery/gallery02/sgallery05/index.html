@@ -1,29 +1,18 @@
 ---
 layout: page
-title: "Body Painting"
+title: "Belly Painting"
 description: ""
 active: gallery
 header-img: "img/gallery-bg.jpg"
 album-title: "Colored Life"
 images:
- - image_path: /gallery/archive/g02/bg1.jpg
-   gallery-folder: /gallery/gallery02/sgallery01/
+ - image_path: /gallery/archive/g02/bg6.jpg
    caption:
-   copyright: Africa
- - image_path: /gallery/archive/g02/bg2.jpg
-   gallery-folder: /gallery/gallery02/sgallery02/
+   copyright: Aerial
+ - image_path: /gallery/archive/g02/bg7.jpg
    caption:
-   copyright: Tribute to Jules Verne
- - image_path: /gallery/archive/g02/bg3.jpg
-   gallery-folder: /gallery/gallery02/sgallery03/
-   caption:
-   copyright: Body and Soul
- - image_path: /gallery/archive/g02/bg4.jpg
-   gallery-folder: /gallery/gallery02/sgallery04/
-   caption:
-   copyright: Magic Door
+   copyright: Aerial
  - image_path: /gallery/archive/g02/bg8.jpg
-   gallery-folder: /gallery/gallery02/sgallery05/
    caption:
    copyright: Aerial
 ---
@@ -49,7 +38,7 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ image.gallery-folder }}" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<a href="{{ site.url }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ image.image_path }}"></a>
 
 					</header>
