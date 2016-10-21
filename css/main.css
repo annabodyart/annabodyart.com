@@ -71,12 +71,12 @@ hr.small {
 }
 
   h2.big.main-page-title{
-      font-size: 160%; 
+      font-size: 160%;
   }
 
 @media only screen and (min-width: 768px) {
   h2.big.main-page-title{
-      font-size: 160%; 
+      font-size: 160%;
   }
   .navbar-custom {
     background: transparent;
@@ -100,7 +100,7 @@ hr.small {
 }
 @media only screen and (min-width: 1170px) {
   h2.big.main-page-title{
-      font-size: 220%; 
+      font-size: 220%;
   }
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
@@ -130,7 +130,7 @@ hr.small {
   .navbar-custom.is-fixed .navbar-brand:hover {
     color: #0085a1;
   }
-  
+
   .navbar-custom.is-fixed .nav li a:hover {
     color: #0085a1;
   }
@@ -421,3 +421,6 @@ body {
  color: black;
 }
 
+.should-click{
+  text-decoration: underline;
+}
