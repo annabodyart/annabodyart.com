@@ -46,7 +46,9 @@ images:
 
 {% for image in page.images %}
 
-				<figure class="gallery-item">
+
+<figure class="gallery-item">
+       <figure class="effect-selena">
 					<header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ image.gallery-folder }}" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
@@ -60,7 +62,7 @@ images:
 						</div>
 					</figcaption>
 				</figure>
-
+      </figure>
 {% endfor %}
 
 			</div>
