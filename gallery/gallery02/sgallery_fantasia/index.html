@@ -4,43 +4,10 @@ title: "Body Painting"
 description: ""
 active: gallery
 header-img: "img/gallery-bg.jpg"
-album-title: "Colored Life (Click on the albums to look see more pictures)"
+album-title: "Fantasia"
 images:
- - image_path: /gallery/archive/g02/bg1.jpg
-   gallery-folder: /gallery/gallery02/sgallery01/
-   caption: Africa
-   copyright:
- - image_path: /gallery/archive/g02/bg2.jpg
-   gallery-folder: /gallery/gallery02/sgallery02/
-   caption: Octopus
-   copyright: Tribute to Jules Verne
- - image_path: /gallery/archive/g02/bg3.jpg
-   gallery-folder: /gallery/gallery02/sgallery03/
-   caption: Body and Soul
-   copyright: Body and Soul
- - image_path: /gallery/archive/g02/bg4.jpg
-   gallery-folder: /gallery/gallery02/sgallery04/
-   caption: Magic Door
-   copyright: Magic Door
- - image_path: /gallery/archive/g02/bg8.jpg
-   gallery-folder: /gallery/gallery02/sgallery05/
-   caption: Aerial
-   copyright: Aerial
- - image_path: /gallery/archive/g02/robot/1.jpg
-   gallery-folder: /gallery/gallery02/sgallery_robot/
-   caption: Robot
-   copyright: Robot
- - image_path: /gallery/archive/g02/wbf2015/1.jpg
-   gallery-folder: /gallery/gallery02/sgallery_wbf2015/
-   caption: WBF 2015
-   copyright: WBF 2015
- - image_path: /gallery/archive/g02/btc9/1.jpg
-   gallery-folder: /gallery/gallery02/sgallery_btc9/
-   caption: Mirror
-   copyright: Mirror
  - image_path: /gallery/archive/g02/fantasia/1.jpg
-   gallery-folder: /gallery/gallery02/sgallery_fantasia/
-   caption: Fantasia
+   caption:
    copyright: Fantasia
 ---
 
@@ -49,7 +16,7 @@ images:
 	<meta content="charset=utf-8">
 </head>
 
-    <body class="gallery">
+    <body>
 
 	<section id="content" role="main">
 		<div class="wrapper">
@@ -62,12 +29,10 @@ images:
 
 {% for image in page.images %}
 
-
-<figure class="gallery-item">
-       <figure class="effect-selena">
+				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ image.gallery-folder }}" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<a href="{{ site.url }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ image.image_path }}"></a>
 
 					</header>
@@ -78,7 +43,7 @@ images:
 						</div>
 					</figcaption>
 				</figure>
-      </figure>
+
 {% endfor %}
 
 			</div>
