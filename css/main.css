@@ -425,3 +425,10 @@ body {
   text-decoration: underline;
   color: white;
 }
+
+/* patch how img-fluid sets cursor and make sure the images share boundaries */
+.row .img-fluid {
+  max-height: 410px;
+  max-width: 550px;
+  cursor: pointer;
+}

@@ -3,7 +3,7 @@ title: Anna chapovalov Body Artist
 email: "annabodyart@gmail.com"
 description: "Professional Face and Body artist living in Austin and painting in life!"
 url: "http://www.annabodyart.com"
-baseurl: "http://www.annabodyart.com"
+baseurl: ""
 facebook_username: "annabodyarts"
 twitter_username: "anna_chapovalov"
 instagram_username: "anna.chapovalov"
@@ -30,11 +30,12 @@ comments :
 
 # Internal nav
 nav:
-  - ABOUT: "http://www.annabodyart.com/about/"
-  - PORTFOLIO: "http://www.annabodyart.com/gallery/"  
-  - NEWS: "http://www.annabodyart.com/journal/"
-  - FAQ: "http://www.annabodyart.com/faq/"  
-  - CONTACT: "http://www.annabodyart.com/contact/"  
+  - HOME: "/home/"
+  - ABOUT: "/about/"
+  - PORTFOLIO: "/gallery/"
+  - NEWS: "/journal/"
+  - FAQ: "/faq/"
+  - CONTACT: "/contact/"
 
 # All translation keys
 translations:
