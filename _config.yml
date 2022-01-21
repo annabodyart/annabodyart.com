@@ -32,9 +32,9 @@ comments :
 nav:
   - HOME: "/home/"
   - ABOUT: "/about/"
-  - PORTFOLIO: "/gallery/"
-  - NEWS: "/journal/"
-  - FAQ: "/faq/"
+#  - PORTFOLIO: "/gallery/"
+#  - NEWS: "/journal/"
+#  - FAQ: "/faq/"
   - CONTACT: "/contact/"
   - BOOKING FORM: "https://docs.google.com/a/continuum.io/forms/d/17_J4nOg-ISIXC0MwkX9hIGdD53oLfiJcoPN-Vr0H1Ok/viewform"
 
