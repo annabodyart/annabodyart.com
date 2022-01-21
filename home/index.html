@@ -1,8 +1,24 @@
 ---
-layout: home_selector
+layout: home
 main-title: "ANNA&#8226;CHAPOVALOV"
 subtitle: "Face and Body Artist"
 description: "Professional Services and Workshops"
+images:
+ - image_path: /img/slider/maia-highkey-01.jpg
+   gallery-folder: /img/slider/
+ - image_path: /img/slider/home02.jpg
+   gallery-folder: /img/slider/
+ - image_path: /img/slider/home03.jpg
+   gallery-folder: /img/slider/
+ - image_path: /img/slider/maia-highkey-04-2.jpg
+   gallery-folder: /img/slider/
+ - image_path: /img/slider/home01.jpg
+   gallery-folder: /img/slider/
+ - image_path: /img/slider/phoebe_bodypaint_torso-04-2.jpg
+   gallery-folder: /img/slider/
+ - image_path: /img/slider/Lilah-Sugarskull-08-2.jpg
+   gallery-folder: /img/slider/   
+
 ---
 
 
@@ -11,80 +27,126 @@ description: "Professional Services and Workshops"
 	<meta content="charset=utf-8">
 
 <!-- CSS -->
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" media="screen" />
       <link rel="stylesheet" href="{{ site.baseurl }}/css/galleries.css" media="screen" />
-<!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" /> -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" />
 
 
 
 	<!-- Modernizr -->
   <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
+
+
+
+
 </head>
 
-<body class="fullscreen" style="background-color: white; color: black; padding-top:30px;">
+<body class="fullscreen">
 
 <!-- MAIN CONTENT SECTION  _____________________________________________-->
 	<section id="content" role="main">
-    <div class="wrapper">
+		<div class="wrapper">
 
-	<!-- WYSIWYG -->
-  <div class="container">
-    <div class="row">
-      <h2 class="big no-margin main-page-title"><strong>{{ page.main-title }}</strong></h2>
-      <h2>{{ page.subtitle }}</h2> 
-                   <div class="entry-summary">
-            <p>{{ page.description }}</p>
-          </div><br />
-    </div>
+			<!-- WYSIWYG -->
 
+		<div class="position-absolute">
+				<h2 class="big no-margin main-page-title"><strong>{{ page.main-title }}</strong></h2>
+				<h2>{{ page.subtitle }}</h2> 
+                     <div class="entry-summary">
+							<p>{{ page.description }}</p>
+						</div><br />
+			</div>
+			
+			<div class="gallery fullscreen-gallery kenburns-gallery">
 
-			<!-- END WYSIWYG -->
+				<canvas id="kenburns"></canvas>
+				
+{% for image in page.images %}  	
 
-      <div class="row">
-        <div class="col-xs-6">
-          <a href="http://facepaintingaustin.com">
-            <img src="/gallery/albums/alb01.jpg" class="img-fluid" alt="Responsive image" style="max-height: 410px; max-width: 550px;">
-          </a>
-        </div>
-        <div class="col-xs-6">
-          <a href="/home">
-            <img src="/img/slider/maia-highkey-01.jpg" class="img-fluid" alt="Responsive image" style="max-height: 410px; max-width: 550px;">
-          </a>
-        </div>
-      </div> <!-- END ROW -->
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
 
-      <div class="row">
-          <div class="col-xs-6">
-            <h3>Family & Kids</h3>
-          </div>
-          <div class="col-xs-6">
-              <h3>Corporate & Adults</h3>
-          </div>
-        </div> <!-- END ROW -->
-
-      </div><!-- END CONTAINER -->
-  </div> <!-- END WRAPPER -->
+<a href="{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.baseurl }}{{ image.image_path }}"></a>
 	
-  <div class="row"  style="background-color: #FFFF; color: #000000; padding-bottom: 40px; margin-top: 50px; margin-bottom: 80px;">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				</header>	
+				</figure>
 
-<center><h4><p><a href="https://docs.google.com/a/continuum.io/forms/d/17_J4nOg-ISIXC0MwkX9hIGdD53oLfiJcoPN-Vr0H1Ok/viewform" target="_blank">BOOKING FORM</a></h4></center>
+{% endfor %}
 
-
-<!-- <form style="padding:3px;text-align:center;font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;" action="https://tinyletter.com/photorgasms" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/yourproject', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" placeholder="Enter your email address"  style="width:200px;height:30px;border:0;background-color:#5A0F28;color:#dddddd;outline:0;padding-left:12px;" name="email" id="tlemail" />&nbsp; &nbsp; <input type="submit" value="Get notified!" style="background-color:#470118;color:#dddddd;height:30px;border:0;" /></form> -->
-      </div>
-  </div>
+				</div>
+			<!-- END WYSIWYG -->
+			
+	
+		</div><!-- END .wrapper -->
 		
 	</section>
 
+<div id="footer" role="contentinfo">
+		<ul class="soc-icons">
+
+                 {% if site.facebook_username %}
+			<li>
+   <a href="https://facebook.com/{{ site.facebook_username }}" style="
+color:#dddddd; target="_blank" title="Facebook">
+                       <i class="fa fa-facebook"></i>
+                     </span>
+</a></li>
+    {% endif %}
+ {% if site.twitter_username %}
+			<li>
+   <a href="https://twitter.com/{{ site.twitter_username }}" style="
+color:#dddddd; target="_blank" title="Twitter">
+                       <i class="fa fa-twitter"></i>
+                     </span>
+</a></li>
+    {% endif %}
+                {% if site.instagram_username %}
+			<li>
+   <a href="https://instagram.com/{{ site.instagram_username }}" style="
+color:#dddddd; target="_blank" title="Instagram">
+                       <i class="fa fa-instagram"></i>
+                     </span>
+</a></li>
+    {% endif %}
+                    {% if site.flickr_username %}
+						<li>
+   <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="
+color:#dddddd; target="_blank" title="Flickr">
+              <i class="fa fa-flickr"></i>
+                     </span>
+ </a></li>	
+     {% endif %}
+                    {% if site.deviantart_username %}
+			<li>
+   <a href="http://{{ site.deviantart_username }}.deviantart.com" style="
+color:#dddddd; target="_blank" title="DeviantArt">
+<i class="fa fa-deviantart"></i> </span>
+</a></li>	
+    {% endif %}
+                    {% if site.github_username %}
+                <li>
+   <a href="https://github.com/{{ site.github_username }}" style="
+color:#dddddd; target="_blank" title="Github">
+              <i class="fa fa-github"></i>
+                     </span>
+                   {% endif %}
+<li>
+    <a href="mailto:{{ site.email }}" style="
+color:#dddddd; target="_blank" title="Email">
+              <i class="fa fa-envelope-o"></i></span>
+          </a> </li>
+	
+					
+		</ul>	
+	</div>
 
   
 <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   <script src="{{ site.baseurl }}/js/retina.min.js"></script> 
 
